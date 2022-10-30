@@ -1,0 +1,52 @@
+pickup2 removemagazine "168Rnd_CMFlare_Chaff_Magazine";
+setacctime 0.5;
+clearRadio;
+enableRadio false;
+camUseNVG false;
+_camera = "camera" camcreate [0,0,0];
+_camera cameraeffect ["internal", "back"]
+
+	;comment "11:20:54";
+	_camera camPrepareTarget [21010.05,-89075.73,-4510.90];
+	_camera camPreparePos [21234.12,10821.98,1.23];
+	_camera camPrepareFOV 0.501;
+	_camera camCommitPrepared 0
+	@camCommitted _camera
+
+~2
+
+	;comment "11:22:30";
+	_camera camPrepareTarget [-36492.01,92145.02,7248.48];
+	_camera camPreparePos [21239.01,10813.58,0.96];
+	_camera camPrepareFOV 0.501;
+	_camera camCommitPrepared 4
+	@camCommitted _camera
+
+~1.1
+
+_camera cameraEffect ["terminate","back"]
+camDestroy _camera
+
+_camera = "camera" camcreate [0,0,0];
+_camera cameraeffect ["internal", "back"]
+
+	#loop
+	;comment "11:27:07";
+	_camera camSetTarget pickup2;
+	_camera camsetrelPos [15,0,7];
+	_camera camPrepareFOV 0.700;
+	_camera camCommitPrepared 0
+	@camCommitted _camera
+
+?!alive pickup2:goto "nextcamera"
+goto "loop"
+
+#nextcamera
+~2
+setacctime 1;
+p1 setdir 270;
+enableRadio true;
+_camera cameraeffect ["terminate","back"]
+camdestroy _camera
+end1=true;
+exit;

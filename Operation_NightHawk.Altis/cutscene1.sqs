@@ -1,0 +1,57 @@
+setacctime 1;
+clearRadio;
+enableRadio false;
+camUseNVG false;
+_camera = "camera" camcreate [0,0,0];
+_camera cameraeffect ["internal", "back"]
+
+	;comment "11:01:10";
+	_camera camPrepareTarget [109706.55,57186.98,2213.34];
+	_camera camPreparePos [21345.69,10416.53,1.58];
+	_camera camPrepareFOV 0.700;
+	_camera camCommitPrepared 0
+	@camCommitted _camera	
+
+~8
+
+_camera cameraEffect ["terminate","back"]
+camDestroy _camera
+
+_camera = "camera" camcreate [0,0,0];
+_camera cameraeffect ["internal", "back"]
+
+	;comment "11:24:21";
+	_camera camPrepareTarget [-78565.31,9884.38,417.27];
+	_camera camPreparePos [21432.32,10434.91,2.88];
+	_camera camPrepareFOV 0.700;
+	_camera camCommitPrepared 0
+	@camCommitted _camera
+
+~4
+
+_camera cameraEffect ["terminate","back"]
+camDestroy _camera
+
+_camera = "camera" camcreate [0,0,0];
+_camera cameraeffect ["internal", "back"]
+
+	;comment "11:28:10";
+	_camera camPrepareTarget [103080.87,-47198.49,418.30];
+	_camera camPreparePos [21363.11,10452.72,1.87];
+	_camera camPrepareFOV 0.700;
+	_camera camCommitPrepared 0
+	@camCommitted _camera
+
+	;comment "11:29:37";
+	_camera camPrepareTarget [75362.23,-72143.92,-16124.80];
+	_camera camPreparePos [21346.14,10452.54,2.60];
+	_camera camPrepareFOV 0.700;
+	_camera camCommitPrepared 8
+	@camCommitted _camera
+~12
+
+enableRadio true;
+_camera cameraeffect ["terminate","back"]
+camdestroy _camera
+end1=true;
+exit;

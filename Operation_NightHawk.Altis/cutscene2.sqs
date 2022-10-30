@@ -1,0 +1,140 @@
+setacctime 1;
+clearRadio;
+enableRadio false;
+camUseNVG false;
+_camera = "camera" camcreate [0,0,0];
+_camera cameraeffect ["internal", "back"]
+
+	;comment "17:36:26";
+	_camera camPrepareTarget [73541.73,88508.52,-35244.20];
+	_camera camPreparePos [21452.28,10772.87,11.20];
+	_camera camPrepareFOV 0.700;
+	_camera camCommitPrepared 0
+	@camCommitted _camera
+
+~5
+
+titleCut ["", "BLACK FADED", 999];
+
+~1.1
+_camera cameraEffect ["terminate","back"]
+camDestroy _camera
+
+_camera = "camera" camcreate [0,0,0];
+_camera cameraeffect ["internal", "back"]
+
+titleCut ["", "BLACK IN", 1];
+
+	;comment "17:37:38";
+	_camera camPrepareTarget [-70041.57,45752.45,-19926.47];
+	_camera camPreparePos [21513.80,10824.10,2.54];
+	_camera camPrepareFOV 0.700;
+	_camera camCommitPrepared 0
+	@camCommitted _camera
+
+
+	;comment "17:38:01";
+	_camera camPrepareTarget [-70041.57,45752.45,-19927.03];
+	_camera camPreparePos [21481.57,10840.21,2.37];
+	_camera camPrepareFOV 0.700;
+	_camera camCommitPrepared 8
+	@camCommitted _camera
+
+~2
+
+titleCut ["", "BLACK FADED", 999];
+
+~1.1
+_camera cameraEffect ["terminate","back"]
+camDestroy _camera
+
+_camera = "camera" camcreate [0,0,0];
+_camera cameraeffect ["internal", "back"]
+
+titleCut ["", "BLACK IN", 1];
+
+	;comment "17:38:51";
+	_camera camPrepareTarget [2176.65,-82132.82,-31192.97];
+	_camera camPreparePos [21534.39,10879.36,2.32];
+	_camera camPrepareFOV 0.700;
+	_camera camCommitPrepared 0
+	@camCommitted _camera
+
+~3
+
+titleCut ["", "BLACK FADED", 999];
+
+~1.1
+_camera cameraEffect ["terminate","back"]
+camDestroy _camera
+
+_camera = "camera" camcreate [0,0,0];
+_camera cameraeffect ["internal", "back"]
+
+titleCut ["", "BLACK IN", 1];
+
+	;comment "17:39:24";
+	_camera camPrepareTarget [109842.59,45651.79,-31211.35];
+	_camera camPreparePos [21460.26,10815.71,3.43];
+	_camera camPrepareFOV 0.700;
+	_camera camCommitPrepared 0
+	@camCommitted _camera
+
+~3
+
+titleCut ["", "BLACK FADED", 999];
+
+~1.1
+_camera cameraEffect ["terminate","back"]
+camDestroy _camera
+
+_camera = "camera" camcreate [0,0,0];
+_camera cameraeffect ["internal", "back"]
+
+titleCut ["", "BLACK IN", 1];
+
+	;comment "17:40:20";
+	_camera camPrepareTarget [110148.05,44811.51,-31212.66];
+	_camera camPreparePos [21449.10,10794.87,2.56];
+	_camera camPrepareFOV 0.700;
+	_camera camCommitPrepared 0
+	@camCommitted _camera
+
+~3
+
+titleCut ["", "BLACK FADED", 999];
+
+~1.1
+_camera cameraEffect ["terminate","back"]
+camDestroy _camera
+
+enableRadio true;
+rec = [] spawn cardrive;
+
+_camera = "camera" camcreate [0,0,0];
+_camera cameraeffect ["internal", "back"]
+
+titleCut ["", "BLACK IN", 1];
+
+	;comment "17:42:16";
+	_camera camPrepareTarget c1;
+	_camera camPreparePos [21521.93,10968.54,30.93];
+	_camera camPrepareFOV 0.700;
+	_camera camCommitPrepared 0
+	@camCommitted _camera
+
+~5
+
+	;comment "17:44:02";
+	_camera camPrepareTarget c1;
+	_camera camPreparePos [21508.96,10894.78,5.58];
+	_camera camPrepareFOV 0.700;
+	_camera camCommitPrepared 15
+	@camCommitted _camera
+
+~6
+
+_camera cameraeffect ["terminate","back"]
+camdestroy _camera
+end1=true;
+exit;

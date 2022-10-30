@@ -1,0 +1,15 @@
+playsound "RadioBreak";
+Yury sidechat "sir look east there seems to be a chopper of some sought. take a look at it through the binoculars";
+sleep 14;
+p1 sidechat "why is Nato here?";
+sleep 5;
+playsound "RadioBreak";
+p1 sidechat "command we have Nato operating in our AO shall we proceed with the operation";
+sleep 3;
+playsound "RadioBreak";
+command sidechat "copy that hold fire and wait one";
+sleep 5;
+playsound "RadioBreak";
+command sidechat "ok proceed with the operation and arrest any unarmed NATO operating in the AO. we will send in a team to pick them up and take them in for questioning.";
+sleep 8;
+p1 exec "cutscene1.sqs";

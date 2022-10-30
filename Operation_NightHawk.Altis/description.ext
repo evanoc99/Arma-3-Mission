@@ -1,0 +1,107 @@
+overviewtext = "to be decided";
+overviewpicture = "intro.jpg";
+
+author = "Penguino";
+onLoadName = "Operation NightHawk";
+onLoadMission = "Infiltrate and Crush the FIA resistance.";
+loadScreen = "intro.jpg";
+
+class CfgIdentities
+{
+	class ValeryPlayer
+	{
+		name="Valery";
+                nameSound = "Valery"; // Arma 3 only!
+		face="WhiteHead_08";
+		glasses="None";
+		speaker="NOVoice";
+		pitch=1.0;
+	};
+
+	class YuryMedic
+	{
+		name="Yury";
+                nameSound = "Givens";
+		face="whiteHead_06";
+		glasses="None";
+		speaker="Male05ENG";
+		pitch=1.1;
+	};
+
+	class YakovAutoriflmen
+	{
+		name="Yakov";
+                nameSound = "Givens";
+		face="whiteHead_06";
+		glasses="None";
+		speaker="Male05ENG";
+		pitch=1.1;
+	};
+
+	class Taras
+	{
+		name="Taras";
+                nameSound = "Givens";
+		face="whiteHead_06";
+		glasses="None";
+		speaker="Male05ENG";
+		pitch=1.1;
+	};
+};
+
+
+class CfgSounds
+{
+sounds[]={};
+
+	class RadioBreak
+	{ 
+	name = "";
+	sound[] = {\sounds\RadioBreak.ogg, db+1, 1.0};
+	titles[] = {};
+	};
+
+};
+
+
+class CfgRadio
+{
+sounds[] = {};
+
+	class Convo1ValeryLine1
+	{
+		name = "";
+		sound[] = {\sound\.ogg, db + 0, 1.0};
+		title = "";
+	};
+
+
+	class Billline1
+	{
+		name = "";
+		sound[] = {\sound\Bill1.ogg, db + 0, 1.0};
+		title = "Good Luck man...I'll take care of the miss if you don't come back"
+	};
+
+	class Ricksonline1
+	{
+		name = "";
+		sound[] = {\sound\Rickson1.ogg, db + 0, 1.0};
+		title = "she is already to go. she should fly like an Arrow through the Air"
+	};
+};
+
+
+
+class CfgDebriefing
+{  
+        class End1
+        {
+                title = "Mission Complete";
+                subtitle = "To Be Continued";
+                description = "Well Done! You compeleted the mission. I hope you enjoyed playing. Any comments or feedback is much Appreciated. please LIKE IF YOU ENJOYED!!!!";
+                pictureBackground = "debriefing.jpg";
+                picture = "symbol.jpg";
+                pictureColor[] = {1.0,1.0,1.0,1};
+        };
+};

@@ -1,0 +1,1 @@
+while {p1 in armedvehicle} do {p1 switchCamera "Internal";};sleep 0.1;};
